@@ -29,7 +29,6 @@ export class WeatherHomeComponent implements OnInit, OnDestroy {
       .subscribe({
         next: (response) => {
           response && (this.weatherDatas = response)
-          console.log(this.weatherDatas)
         },
         error(err) {
           console.log(err)
